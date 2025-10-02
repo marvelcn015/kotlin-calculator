@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".presentation.main.MainActivity">
+
+    <!-- Top Button Bar - Fixed at top -->
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#2196F3"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="Light Theme"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:backgroundTint="#4CAF50" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="Dark Theme"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:backgroundTint="#FF5722" />
+    </LinearLayout>
+
+    <!-- Fragment Container - Takes remaining space -->
+    <FrameLayout
+        android:id="@+id/FL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE" />
+
+</LinearLayout>
